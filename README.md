@@ -54,7 +54,7 @@ It contains 8 simulations:
 
  The performance of the testing result is:
 
-<img width="375" height="500" src="/images/Result_cb513_original_data_0317_162epochs.png">
+<img width="375" height="500" src="/images/Result_cb513_original_data_0317_162epochs.PNG">
 
 ### 2) Nonseq elimination by substitution & unbalanced class
 
@@ -72,7 +72,7 @@ GIHLEHEL**GIHLEHEL**<br/>
 
  The performance of the testing result is:
 
-<img width="375" height="500" src="/images/Result_cb513_original_data_0702_119epochs.png">
+<img width="375" height="500" src="/images/Result_cb513_original_data_0702_119epochs.PNG">
 
 ### 3) Nonseq elimination by substitution & balanced class
  The data processing method is same as Simulation 2 except we partial increase the proporation of sequences containing minority class. The partial balance is achieved by repeating the whole 700 length sequence containing minority class.
@@ -82,7 +82,7 @@ GIHLEHEL**GIHLEHEL**<br/>
  
  The performance of the testing result is:
 
-<img width="375" height="500" src="/images/Result_cb513_original_data_0712_120epochs.png">
+<img width="375" height="500" src="/images/Result_cb513_original_data_0712_120epochs.PNG">
 
 ### 4) Break Sequence into piece to achieve fully balanced dataset
 
@@ -105,7 +105,7 @@ LBTEH**GIHLEHEL**<br/>
 
   The performance of the testing result is:
 
-<img width="375" height="500" src="/images/Result_cb513_original_data_0717_255epochs.png">
+<img width="375" height="500" src="/images/Result_cb513_original_data_0717_255epochs.PNG">
 
 ### 7) Nonseq elimination by selection & balance dataset
  The data processing method is same as Simulation 6 except we partial increase the proporation of sequences containing minority class. The partial balance is achieved by repeating the whole 700 length sequence containing minority class.
@@ -114,7 +114,7 @@ LBTEH**GIHLEHEL**<br/>
 
  The performance of the testing result is:
 
-<img width="375" height="500" src="/images/Result_cb513_original_data_0720_169epochs.png">
+<img width="375" height="500" src="/images/Result_cb513_original_data_0720_169epochs.PNG">
 
 ### 8) Two stage classification & unbalanced dataset
 
@@ -126,7 +126,7 @@ LBTEH**GIHLEHEL**<br/>
  The first stage model only distinguish four major class with minor class. 
  The performance of the testing result is:
 
-<img width="375" height="500" src="/images/Result_cb513_original_data_0718_315epochs.png">
+<img width="375" height="500" src="/images/Result_cb513_original_data_0718_315epochs.PNG">
 
  The second stage model do further classification among samples treated as “minor” class after stage 1.
  The performance of the testing result is: 
