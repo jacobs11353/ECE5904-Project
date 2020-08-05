@@ -18,7 +18,7 @@ The proporation of each labels in the training set (cullpdb+profile_6133) is:
 ![Image of Dataset](/images/Correct_CB6133Frequency.png)
 
 
-###The format of the sequence data<
+### The format of the sequence data
 <p>(N protein x 700 amino acids x 57 features)<br/>
 Among all 57 features, this model only utilize the following three pars<br/>
 <li>a. feature 1:[0,22): amino acid residues, with the order of 'A', 'C', 'E', 'D', 'G', 'F', 'I', 'H', 'K', 'M', 'L', 'N', 'Q', 'P', 'S', 'R', 'T', 'W', 'V', 'Y', 'X','NoSeq'</li>
@@ -41,15 +41,15 @@ It contains 8 simulations:
 
   e.g.
 
- LBTEH***********
- GIHLEHEL********
-	    =
- LBTEH**LLLLLLLLLLL**
- GIHLEHE**LLLLLLLLL**
+ LBTEH***********<br/>
+ GIHLEHEL********<br/>
+	    =<br/>
+ LBTEH**LLLLLLLLLLL**<br/>
+ GIHLEHE**LLLLLLLLL**<br/>
 
 
  After data processing, the proporation of each labels in (cullpdb+profile_6133) is:
-![Image of Simulation 1](/images/CB6133Frequency.png)
+<img src = "/images/CB6133Frequency.png", width="375">
 
  The performance of the testing result is:
 ![Image of Simulation 1](/images/Result_cb513_original_data_0317_162epochs.PNG)
@@ -61,11 +61,11 @@ The "Nonseq" part is eliminated by repeating the meaningful part of the sequence
 The size of the training set is (5278 sequences).
  e.g.
 
-LBTEH*************
-GIHLEHEL*********
-        =
-LBTEH**LBTEHLBTE** 
-GIHLEHEL**GIHLEHEL**
+LBTEH*************<br/>
+GIHLEHEL*********<br/>
+        =<br/>
+LBTEH**LBTEHLBTE** <br/>
+GIHLEHEL**GIHLEHEL**<br/>
 
 
  The performance of the testing result is:
@@ -92,11 +92,11 @@ GIHLEHEL**GIHLEHEL**
  The size of the training set (1574 sequences). 
  e.g.
 
-LBTEH************
-       +  
-GIHLEHEL********
-       =
-LBTEH**GIHLEHEL**
+LBTEH************<br/>
+       +  <br/>
+GIHLEHEL********<br/>
+       = <br/>
+LBTEH**GIHLEHEL**<br/>
 
 
 
