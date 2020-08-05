@@ -38,9 +38,9 @@ It contains 8 simulations:
  The label of "Nonseq" part is convert to “L” and the amino acid residue is convert to A. 
 
  The size of the training set is (5278 sequence).
-
+  e.g.
   ```diff
-  e.g.  -LBTEH************
+        -LBTEH************
         -GIHLEHEL********
 	        	=
 	    +LBTEHLLLLLLLLL
@@ -48,7 +48,7 @@ It contains 8 simulations:
   ```
 
  After data processing, the proporation of each labels in (cullpdb+profile_6133) is:
-![Image of Simulation 1](https://github.com/jacobs11353/ECE5904-Project/images/CB6133Frequency.png)
+![Image of Simulation 1](images/CB6133Frequency.png)
 
  The performance of the testing result is:
 ![Image of Simulation 1](https://github.com/jacobs11353/ECE5904-Project/images/Result_cb513_original_data_0317_162epochs.png)
@@ -58,9 +58,9 @@ It contains 8 simulations:
 The "Nonseq" part is eliminated by repeating the meaningful part of the sequence to maintain its original length(700/sequence). 
 
 The size of the training set is (5278 sequences).
-
+ e.g.
  ```diff
- e.g.  -LBTEH*************
+ 	   -LBTEH*************
        -GIHLEHEL*********
               =
        +LBTEHLBTEHLBTE 
@@ -90,9 +90,9 @@ The size of the training set is (5278 sequences).
  The "Nonseq" part is eliminated by selecting the meaningful part of the sequence only. The length of each sequence is shrink from 700 to a shorter length. Then, we concatenate all vari-length sequence and cut into 700 length pieces.
 
  The size of the training set (1574 sequences). 
-
+ e.g.
  ```diff
- e.g.  -LBTEH*************
+       -LBTEH*************
               +  
        -GIHLEHEL********
               =
