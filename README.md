@@ -15,8 +15,8 @@ The amino acid chains are described by a 700 × 57 matrix to keep the data size 
 Among the 57 features, 22 represent the primary structure (20 amino acids, 1 unknown or any amino acid, 1 'No Seq' -padding-), 22 the Protein Profiles (same as primary structure) and 9 are the secondary structure (8 possible states, 1 'No Seq' -padding-).
 
 The proporation of each labels in the training set (cullpdb+profile_6133) is:
-![Image of Dataset](/images/Correct_CB6133Frequency.png)
 
+<img width="375" height="300" src="/images/Correct_CB6133Frequency.png">
 
 ### The format of the sequence data
 <p>(N protein x 700 amino acids x 57 features)<br/>
@@ -50,11 +50,11 @@ It contains 8 simulations:
 
  After data processing, the proporation of each labels in (cullpdb+profile_6133) is:
 
-<img width="150" height="150" src="https://img-blog.csdn.net/20161028230559575"/>
 <img width="375" height="300" src="/images/CB6133Frequency.png">
 
  The performance of the testing result is:
-![Image of Simulation 1](/images/Result_cb513_original_data_0317_162epochs.PNG)
+
+<img width="3750" height="500" src="/images/Result_cb513_original_data_0317_162epochs.png">
 
 ### 2) Nonseq elimination by substitution & unbalanced class
 
@@ -71,7 +71,8 @@ GIHLEHEL**GIHLEHEL**<br/>
 
 
  The performance of the testing result is:
-![Image of Simulation 2](/images/Result_cb513_original_data_0702_119epochs.PNG)
+
+<img width="3750" height="500" src="/images/Result_cb513_original_data_0702_119epochs.png">
 
 ### 3) Nonseq elimination by substitution & balanced class
  The data processing method is same as Simulation 2 except we partial increase the proporation of sequences containing minority class. The partial balance is achieved by repeating the whole 700 length sequence containing minority class.
@@ -80,8 +81,8 @@ GIHLEHEL**GIHLEHEL**<br/>
 
  
  The performance of the testing result is:
-![Image of Simulation 3](/images/Result_cb513_original_data_0712_120epochs.PNG)
 
+<img width="3750" height="500" src="/images/Result_cb513_original_data_0712_120epochs.png">
 
 ### 4) Break Sequence into piece to achieve fully balanced dataset
 
@@ -103,7 +104,8 @@ LBTEH**GIHLEHEL**<br/>
 
 
   The performance of the testing result is:
-![Image of Simulation 6](/images/Result_cb513_original_data_0717_255epochs.PNG)
+
+<img width="3750" height="500" src="/images/Result_cb513_original_data_0717_255epochs.png">
 
 ### 7) Nonseq elimination by selection & balance dataset
  The data processing method is same as Simulation 6 except we partial increase the proporation of sequences containing minority class. The partial balance is achieved by repeating the whole 700 length sequence containing minority class.
@@ -111,7 +113,8 @@ LBTEH**GIHLEHEL**<br/>
  The size of the training set is (4478 sequences).
 
  The performance of the testing result is:
-![Image of Simulation 7](/images/Result_cb513_original_data_0720_169epochs.PNG)
+
+<img width="3750" height="500" src="/images/Result_cb513_original_data_0720_169epochs.png">
 
 ### 8) Two stage classification & unbalanced dataset
 
@@ -122,13 +125,15 @@ LBTEH**GIHLEHEL**<br/>
  Testing: 
  The first stage model only distinguish four major class with minor class. 
  The performance of the testing result is:
-![Image of Simulation 8](/images/Result_cb513_original_data_0718_315epochs.PNG)
+
+<img width="3750" height="500" src="/images/Result_cb513_original_data_0718_315epochs.png">
 
  The second stage model do further classification among samples treated as “minor” class after stage 1.
  The performance of the testing result is: 
 
  The combine result of first stage and second stage is:
-![Image of Simulation 8](/images/Result_cb513_original_data_0719_stage_2_186_epochs.png)
+
+<img width="3750" height="500" src="/images/Result_cb513_original_data_0719_stage_2_186_epochs.png">
 
 ## References
 \[1\]: Guo, Yanbu, et al. "DeepACLSTM: deep asymmetric convolutional long short-term memory neural models for protein secondary structure prediction." BMC bioinformatics 20.1 (2019): 1-12. - https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2940-0
