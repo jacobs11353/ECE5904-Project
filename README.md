@@ -52,7 +52,7 @@ It contains 8 simulations:
 ![Image of Simulation 1](/images/CB6133Frequency.png)
 
  The performance of the testing result is:
-![Image of Simulation 1](/images/Result_cb513_original_data_0317_162epochs.png)
+![Image of Simulation 1](/images/Result_cb513_original_data_0317_162epochs.PNG)
 
 ### 2) Nonseq elimination by substitution & unbalanced class
 
@@ -61,16 +61,16 @@ The "Nonseq" part is eliminated by repeating the meaningful part of the sequence
 The size of the training set is (5278 sequences).
  e.g.
 ```diff
- 	   - LBTEH*************
-       - GIHLEHEL*********
-              =
-       + LBTEHLBTEHLBTE 
-       + GIHLEHELGIHLEH
+LBTEH*************
+GIHLEHEL*********
+        =
+LBTEHLBTEHLBTE 
+GIHLEHELGIHLEH
 
 ```
 
  The performance of the testing result is:
-![Image of Simulation 2](/images/Result_cb513_original_data_0702_119epochs.png)
+![Image of Simulation 2](/images/Result_cb513_original_data_0702_119epochs.PNG)
 
 ### 3) Nonseq elimination by substitution & balanced class
  The data processing method is same as Simulation 2 except we partial increase the proporation of sequences containing minority class. The partial balance is achieved by repeating the whole 700 length sequence containing minority class.
@@ -79,7 +79,7 @@ The size of the training set is (5278 sequences).
 
  
  The performance of the testing result is:
-![Image of Simulation 3](/images/Result_cb513_original_data_0712_120epochs.png)
+![Image of Simulation 3](/images/Result_cb513_original_data_0712_120epochs.PNG)
 
 
 ### 4) Break Sequence into piece to achieve fully balanced dataset
@@ -97,12 +97,12 @@ The size of the training set is (5278 sequences).
        +  
 -GIHLEHEL********
        =
-+LBTEH+GIHLEHEL
++LBTEH@@GIHLEHEL@@
 
 ```
 
   The performance of the testing result is:
-![Image of Simulation 6](/images/Result_cb513_original_data_0717_255epochs.png)
+![Image of Simulation 6](/images/Result_cb513_original_data_0717_255epochs.PNG)
 
 ### 7) Nonseq elimination by selection & balance dataset
  The data processing method is same as Simulation 6 except we partial increase the proporation of sequences containing minority class. The partial balance is achieved by repeating the whole 700 length sequence containing minority class.
@@ -110,7 +110,7 @@ The size of the training set is (5278 sequences).
  The size of the training set is (4478 sequences).
 
  The performance of the testing result is:
-![Image of Simulation 7](/images/Result_cb513_original_data_0720_169epochs.png)
+![Image of Simulation 7](/images/Result_cb513_original_data_0720_169epochs.PNG)
 
 ### 8) Two stage classification & unbalanced dataset
 
@@ -121,7 +121,7 @@ The size of the training set is (5278 sequences).
  Testing: 
  The first stage model only distinguish four major class with minor class. 
  The performance of the testing result is:
-![Image of Simulation 8](/images/Result_cb513_original_data_0718_315epochs.png)
+![Image of Simulation 8](/images/Result_cb513_original_data_0718_315epochs.PNG)
 
  The second stage model do further classification among samples treated as “minor” class after stage 1.
  The performance of the testing result is: 
