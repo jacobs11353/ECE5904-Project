@@ -40,13 +40,13 @@ It contains 8 simulations:
  The size of the training set is (5278 sequence).
 
   e.g.
-```diff
-- LBTEH***********
-- GIHLEHEL********
+
+ LBTEH***********
+ GIHLEHEL********
 	    =
-+ LBTEHLLLLLLLLLLL
-+ GIHLEHELLLLLLLLL
-```
+ LBTEH**LLLLLLLLLLL**
+ GIHLEHE**LLLLLLLLL**
+
 
  After data processing, the proporation of each labels in (cullpdb+profile_6133) is:
 ![Image of Simulation 1](/images/CB6133Frequency.png)
@@ -60,14 +60,13 @@ The "Nonseq" part is eliminated by repeating the meaningful part of the sequence
 
 The size of the training set is (5278 sequences).
  e.g.
-```diff
+
 LBTEH*************
 GIHLEHEL*********
         =
-LBTEHLBTEHLBTE 
-GIHLEHELGIHLEH
+LBTEH**LBTEHLBTE** 
+GIHLEHEL**GIHLEHEL**
 
-```
 
  The performance of the testing result is:
 ![Image of Simulation 2](/images/Result_cb513_original_data_0702_119epochs.PNG)
@@ -92,14 +91,14 @@ GIHLEHELGIHLEH
 
  The size of the training set (1574 sequences). 
  e.g.
-```diff
--LBTEH************
-       +  
--GIHLEHEL********
-       =
-+LBTEH@@GIHLEHEL@@
 
-```
+LBTEH************
+       +  
+GIHLEHEL********
+       =
+LBTEH**GIHLEHEL**
+
+
 
   The performance of the testing result is:
 ![Image of Simulation 6](/images/Result_cb513_original_data_0717_255epochs.PNG)
