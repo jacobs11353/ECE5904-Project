@@ -49,7 +49,9 @@ It contains 8 simulations:
 
 
  After data processing, the proporation of each labels in (cullpdb+profile_6133) is:
-<img src = "/images/CB6133Frequency.png", width="375">
+
+<img width="150" height="150" src="https://img-blog.csdn.net/20161028230559575"/>
+<img width="375" height="300" src="/images/CB6133Frequency.png">
 
  The performance of the testing result is:
 ![Image of Simulation 1](/images/Result_cb513_original_data_0317_162epochs.PNG)
