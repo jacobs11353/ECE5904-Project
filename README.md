@@ -82,7 +82,7 @@ GIHLEHEL**GIHLEHEL**<br/>
  
  The performance of the testing result is:
 
-<img width="325" height="400" src="/3.Nonseq_elimination_by_substitution_balance/Result_cb513_original_data_0712_120epochs.PNG">
+<img width="350" height="425" src="/3.Nonseq_elimination_by_substitution_balance/Result_cb513_original_data_0712_120epochs.PNG">
 
 ### 4) Break Sequence into piece to achieve fully balanced dataset
 
@@ -126,14 +126,14 @@ LBTEH**GIHLEHEL**<br/>
  The first stage model only distinguish four major class with minor class. 
  The performance of the testing result is:
 
-<img width="425" height="350" src="/8.Two_stage_unbalance/Stage_1/Result_cb513_original_data_0718_315epochs_with_confusion_matrix.PNG">
+<img width="325" height="250" src="/8.Two_stage_unbalance/Stage_1/Result_cb513_original_data_0718_315epochs_with_confusion_matrix.PNG">
 
  The second stage model do further classification among samples treated as “minor” class after stage 1.
  The performance of the testing result is: 
 
  The combine result of first stage and second stage is:
 
-<img width="325" height="400" src="/8.Two_stage_unbalance/Stage_2/Result_cb513_original_data_0719_stage_2_186_epochs.png">
+<img width="350" height="425" src="/8.Two_stage_unbalance/Stage_2/Result_cb513_original_data_0719_stage_2_186_epochs.png">
 
 ## References
 \[1\]: Guo, Yanbu, et al. "DeepACLSTM: deep asymmetric convolutional long short-term memory neural models for protein secondary structure prediction." BMC bioinformatics 20.1 (2019): 1-12. - https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2940-0
