@@ -15,7 +15,7 @@ The amino acid chains are described by a 700 × 57 matrix to keep the data size 
 Among the 57 features, 22 represent the primary structure (20 amino acids, 1 unknown or any amino acid, 1 'No Seq' -padding-), 22 the Protein Profiles (same as primary structure) and 9 are the secondary structure (8 possible states, 1 'No Seq' -padding-).
 
 The proporation of each labels in the training set (cullpdb+profile_6133) is:
-![Image of Dataset](https://github.com/jacobs11353/ECE5904-Project/images/Correct_CB6133Frequency.png)
+![Image of Dataset](/images/Correct_CB6133Frequency.png)
 
 
 ###The format of the sequence data<
@@ -38,17 +38,18 @@ It contains 8 simulations:
  The label of "Nonseq" part is convert to “L” and the amino acid residue is convert to A. 
 
  The size of the training set is (5278 sequence).
+
   e.g.
-  ```diff
-        -LBTEH************
-        -GIHLEHEL********
-	        	=
-	    +LBTEHLLLLLLLLL
-        +GIHLEHELLLLLLL
-  ```
+```diff
+- LBTEH***********
+- GIHLEHEL********
+	    =
++ LBTEHLLLLLLLLLLL
++ GIHLEHELLLLLLLLL
+```
 
  After data processing, the proporation of each labels in (cullpdb+profile_6133) is:
-![Image of Simulation 1](images/CB6133Frequency.png)
+![Image of Simulation 1](/images/CB6133Frequency.png)
 
  The performance of the testing result is:
 ![Image of Simulation 1](https://github.com/jacobs11353/ECE5904-Project/images/Result_cb513_original_data_0317_162epochs.png)
