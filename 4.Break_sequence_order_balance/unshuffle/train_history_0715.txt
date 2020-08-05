@@ -1,0 +1,71 @@
+Train on 4329 samples, validate on 218 samples
+Epoch 1/200
+4312/4329 [============================>.] - ETA: 2s - loss: 2.0870 - acc: 0.1261   Epoch 00000: val_loss improved from inf to 2.08216, saving model to model/ac_LSTM_best_time_26_07_15.h5
+4329/4329 [==============================] - 635s - loss: 2.0870 - acc: 0.1261 - val_loss: 2.0822 - val_acc: 0.1340
+Epoch 2/200
+4312/4329 [============================>.] - ETA: 2s - loss: 2.0820 - acc: 0.1271  Epoch 00001: val_loss improved from 2.08216 to 2.08168, saving model to model/ac_LSTM_best_time_26_07_15.h5
+4329/4329 [==============================] - 623s - loss: 2.0820 - acc: 0.1272 - val_loss: 2.0817 - val_acc: 0.1256
+Epoch 3/200
+4312/4329 [============================>.] - ETA: 2s - loss: 2.0731 - acc: 0.1425  Epoch 00002: val_loss improved from 2.08168 to 2.02173, saving model to model/ac_LSTM_best_time_26_07_15.h5
+4329/4329 [==============================] - 616s - loss: 2.0730 - acc: 0.1426 - val_loss: 2.0217 - val_acc: 0.1803
+Epoch 4/200
+4312/4329 [============================>.] - ETA: 2s - loss: 2.0270 - acc: 0.1839  Epoch 00003: val_loss improved from 2.02173 to 1.98284, saving model to model/ac_LSTM_best_time_26_07_15.h5
+4329/4329 [==============================] - 618s - loss: 2.0270 - acc: 0.1839 - val_loss: 1.9828 - val_acc: 0.2003
+Epoch 5/200
+4312/4329 [============================>.] - ETA: 2s - loss: 2.0055 - acc: 0.1993  Epoch 00004: val_loss improved from 1.98284 to 1.97453, saving model to model/ac_LSTM_best_time_26_07_15.h5
+4329/4329 [==============================] - 619s - loss: 2.0055 - acc: 0.1993 - val_loss: 1.9745 - val_acc: 0.2082
+Epoch 6/200
+4312/4329 [============================>.] - ETA: 2s - loss: 1.9807 - acc: 0.2204  Epoch 00005: val_loss improved from 1.97453 to 1.93567, saving model to model/ac_LSTM_best_time_26_07_15.h5
+4329/4329 [==============================] - 617s - loss: 1.9807 - acc: 0.2205 - val_loss: 1.9357 - val_acc: 0.2221
+Epoch 7/200
+4312/4329 [============================>.] - ETA: 2s - loss: 1.9400 - acc: 0.2458  Epoch 00006: val_loss improved from 1.93567 to 1.92996, saving model to model/ac_LSTM_best_time_26_07_15.h5
+4329/4329 [==============================] - 613s - loss: 1.9400 - acc: 0.2459 - val_loss: 1.9300 - val_acc: 0.2406
+Epoch 8/200
+4312/4329 [============================>.] - ETA: 2s - loss: 1.9053 - acc: 0.2666  Epoch 00007: val_loss improved from 1.92996 to 1.91005, saving model to model/ac_LSTM_best_time_26_07_15.h5
+4329/4329 [==============================] - 627s - loss: 1.9052 - acc: 0.2666 - val_loss: 1.9101 - val_acc: 0.2572
+Epoch 9/200
+4312/4329 [============================>.] - ETA: 2s - loss: 1.9123 - acc: 0.2757  Epoch 00008: val_loss did not improve
+4329/4329 [==============================] - 609s - loss: 1.9127 - acc: 0.2754 - val_loss: 1.9874 - val_acc: 0.2144
+Epoch 10/200
+4312/4329 [============================>.] - ETA: 2s - loss: 1.9542 - acc: 0.2391  Epoch 00009: val_loss improved from 1.91005 to 1.89830, saving model to model/ac_LSTM_best_time_26_07_15.h5
+4329/4329 [==============================] - 616s - loss: 1.9540 - acc: 0.2392 - val_loss: 1.8983 - val_acc: 0.2563
+Epoch 11/200
+4312/4329 [============================>.] - ETA: 2s - loss: 1.8766 - acc: 0.2796  Epoch 00010: val_loss improved from 1.89830 to 1.88261, saving model to model/ac_LSTM_best_time_26_07_15.h5
+4329/4329 [==============================] - 617s - loss: 1.8765 - acc: 0.2797 - val_loss: 1.8826 - val_acc: 0.2611
+Epoch 12/200
+4312/4329 [============================>.] - ETA: 2s - loss: 1.8286 - acc: 0.2999  Epoch 00011: val_loss did not improve
+4329/4329 [==============================] - 615s - loss: 1.8285 - acc: 0.2999 - val_loss: 1.9850 - val_acc: 0.3001
+Epoch 13/200
+4312/4329 [============================>.] - ETA: 2s - loss: 1.7836 - acc: 0.3170  Epoch 00012: val_loss did not improve
+4329/4329 [==============================] - 620s - loss: 1.7835 - acc: 0.3171 - val_loss: 2.0076 - val_acc: 0.2888
+Epoch 14/200
+4312/4329 [============================>.] - ETA: 2s - loss: 1.7488 - acc: 0.3283  Epoch 00013: val_loss did not improve
+4329/4329 [==============================] - 618s - loss: 1.7488 - acc: 0.3284 - val_loss: 1.9936 - val_acc: 0.2752
+Epoch 15/200
+4312/4329 [============================>.] - ETA: 2s - loss: 1.7187 - acc: 0.3383  Epoch 00014: val_loss did not improve
+4329/4329 [==============================] - 612s - loss: 1.7187 - acc: 0.3382 - val_loss: 2.0358 - val_acc: 0.2680
+Epoch 16/200
+4312/4329 [============================>.] - ETA: 2s - loss: 1.6969 - acc: 0.3446  Epoch 00015: val_loss did not improve
+4329/4329 [==============================] - 622s - loss: 1.6969 - acc: 0.3446 - val_loss: 2.1482 - val_acc: 0.2398
+Epoch 17/200
+4312/4329 [============================>.] - ETA: 2s - loss: 2.0241 - acc: 0.2288  Epoch 00016: val_loss did not improve
+4329/4329 [==============================] - 622s - loss: 2.0241 - acc: 0.2287 - val_loss: 2.0348 - val_acc: 0.1643
+Epoch 18/200
+4312/4329 [============================>.] - ETA: 2s - loss: 2.0049 - acc: 0.2167  Epoch 00017: val_loss did not improve
+4329/4329 [==============================] - 619s - loss: 2.0049 - acc: 0.2167 - val_loss: 2.0115 - val_acc: 0.1857
+Epoch 19/200
+4312/4329 [============================>.] - ETA: 2s - loss: 1.9804 - acc: 0.2322  Epoch 00018: val_loss did not improve
+4329/4329 [==============================] - 623s - loss: 1.9803 - acc: 0.2323 - val_loss: 2.0043 - val_acc: 0.2116
+Epoch 20/200
+4312/4329 [============================>.] - ETA: 2s - loss: 1.9644 - acc: 0.2409  Epoch 00019: val_loss did not improve
+4329/4329 [==============================] - 615s - loss: 1.9643 - acc: 0.2410 - val_loss: 2.0098 - val_acc: 0.2132
+Epoch 21/200
+4312/4329 [============================>.] - ETA: 2s - loss: 1.9509 - acc: 0.2482  Epoch 00020: val_loss did not improve
+4329/4329 [==============================] - 617s - loss: 1.9509 - acc: 0.2482 - val_loss: 2.0256 - val_acc: 0.2123
+Epoch 22/200
+4312/4329 [============================>.] - ETA: 2s - loss: 2.0044 - acc: 0.2206  Epoch 00021: val_loss did not improve
+4329/4329 [==============================] - 608s - loss: 2.0044 - acc: 0.2205 - val_loss: 2.0247 - val_acc: 0.1890
+Epoch 23/200
+4312/4329 [============================>.] - ETA: 2s - loss: 2.0005 - acc: 0.2204  Epoch 00022: val_loss did not improve
+4329/4329 [==============================] - 618s - loss: 2.0005 - acc: 0.2204 - val_loss: 2.0202 - val_acc: 0.1921
+Epoch 00022: early stopping
