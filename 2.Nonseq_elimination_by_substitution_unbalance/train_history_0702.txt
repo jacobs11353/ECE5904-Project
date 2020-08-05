@@ -1,0 +1,30 @@
+
+^^^^^^^^ start loading data ^^^^^^^^^
+Loading train data (Cullpdb_filted)...
+total number of non_zero location is: 1102166
+before upsampling, the class counting result is: Counter({5: 378830, 2: 239476, 0: 212981, 7: 124709, 6: 91559, 3: 42816, 1: 11569, 4: 226})
+number of sequence is: 1574 , the reamin is: 366
+length should be:  1102166 , the actual value is 1102166
+
+
+
+(1101800, 1)
+Counter({5: 378677, 2: 239403, 0: 212914, 7: 124669, 6: 91538, 3: 42806, 1: 11567, 4: 226})
+(1102166, 1)
+Counter({5: 378830, 2: 239476, 0: 212981, 7: 124709, 6: 91559, 3: 42816, 1: 11569, 4: 226})
+
+
+
+total number of non_zero location is: 55234
+before upsampling, the class counting result is: Counter({5: 19152, 2: 11764, 0: 10653, 7: 6364, 6: 4547, 3: 2173, 1: 575, 4: 6})
+number of sequence is: 78 , the reamin is: 634
+length should be:  55234 , the actual value is 55234
+
+
+
+(54600, 1)
+Counter({5: 18908, 2: 11657, 0: 10519, 7: 6311, 6: 4494, 3: 2136, 1: 569, 4: 6})
+(55234, 1)
+Counter({5: 19152, 2: 11764, 0: 10653, 7: 6364, 6: 4547, 3: 2173, 1: 575, 4: 6})
+Loading Test data (CB513)...
+(514, 700, 57)

@@ -133,7 +133,7 @@ earlyStopping = EarlyStopping(monitor='val_loss', patience=10, verbose=1, mode='
 # load_file = "./model/ACNN/acnn1-3-42-400-300-blstm-FC600-42-cb6133F-0.5-0.4.h5"
 #################################
 # load_file = "./model/ac_LSTM_best_time_17.h5" # M: weighted_accuracy E: val_weighted_accuracy
-load_file = "model/ac_LSTM_best_time_26_03_17.h5" # M: val_loss E: val_weighted_accuracy
+load_file = "model/ac_LSTM_best_time_26_03_17_162epochs.h5" # M: val_loss E: val_weighted_accuracy
 checkpointer = ModelCheckpoint(filepath=load_file,verbose=1,save_best_only=True)
 
 history=model.fit({'main_input': traindatahot, 'aux_input': trainpssm}, {'main_output': trainlabel},validation_data=({'main_input': valdatahot, 'aux_input': valpssm},{'main_output': vallabel}),
@@ -187,6 +187,20 @@ print(classification_report(y_true_categorical_data.flatten(), y_pred_categorica
 from sklearn.metrics import confusion_matrix
 
  
-results = confusion_matrix(y_true_categorical_data.flatten(), y_pred_categorical_data.flatten()) 
-print('    L    ', '  B ', '  E   ', ' G   ', '  I  ', ' H   ', ' S   ', ' T   ')
-print(results)
+#results = confusion_matrix(y_true_categorical_data.flatten(), y_pred_categorical_data.flatten()) 
+#print('    L    ', '  B ', '  E   ', ' G   ', '  I  ', ' H   ', ' S   ', ' T   ')
+#print(results)
+
+y_true = y_true_categorical_data.flatten()
+y_pred = y_pred_categorical_data.flatten()
+
+import pandas as pd
+
+unique_label = np.unique([y_true, y_pred])
+
+cmtx = pd.DataFrame(
+    confusion_matrix(y_true, y_pred, labels=unique_label), 
+    index=['true:{:}'.format(target_names[x]) for x in unique_label], 
+    columns=['pred:{:}'.format(target_names[x]) for x in unique_label]
+)
+print(cmtx)

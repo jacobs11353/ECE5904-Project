@@ -99,8 +99,28 @@ def build_model():
 print("^^^^^^^^ start loading data ^^^^^^^^^")
 # load train/validation dataset
 traindatahot, trainpssm, trainlabel, valdatahot, valpssm, vallabel = load_cul6133_filted()
+print()
+print()
+print("Train dataset:")
+print("traindatahot.shape: ", traindatahot.shape)
+print("trainpssm.shape: ",trainpssm.shape)
+print("trainlabel.shape: ", trainlabel.shape)
+print()
+print("valdatahot.snhape: ", valdatahot.shape)
+print("valpssm.shape: ",valpssm.shape)
+print("vallabel.shape: ", vallabel.shape)
+print()
+print()
 # load test dataset
 testdatahot,testpssm,test_label = load_cb513()
+print()
+print()
+print("Testing dataset:")
+print("testdatahot.shape: ", testdatahot.shape)
+print("testpssm.shape: ",testpssm.shape)
+print("test_label.shape: ", test_label.shape)
+print()
+print()
 #testdatahot, testpssm, test_label = load_casp10()
 #testdatahot, testpssm, test_label = load_casp11()
 
@@ -112,7 +132,7 @@ earlyStopping = EarlyStopping(monitor='val_loss', patience=10, verbose=1, mode='
 # load_file = "./model/ACNN/acnn1-3-42-400-300-blstm-FC600-42-cb6133F-0.5-0.4.h5"
 #################################
 # load_file = "./model/ac_LSTM_best_time_17.h5" # M: weighted_accuracy E: val_weighted_accuracy
-load_file = "model/ac_LSTM_best_time_26.h5" # M: val_loss E: val_weighted_accuracy
+load_file = "model/ac_LSTM_best_time_26_0702.h5" # M: val_loss E: val_weighted_accuracy
 checkpointer = ModelCheckpoint(filepath=load_file,verbose=1,save_best_only=True)
 
 history=model.fit({'main_input': traindatahot, 'aux_input': trainpssm}, {'main_output': trainlabel},validation_data=({'main_input': valdatahot, 'aux_input': valpssm},{'main_output': vallabel}),
@@ -149,8 +169,8 @@ for index in range(y_true.shape[0]):
   for pred,label in zip(y_pred[index], y_true[index]):
     if np.sum(label) == 0:
       continue
-    y_pred_categorical_data.append([np.argmax(label)])
-    y_true_categorical_data.append([np.argmax(pred)])
+    y_pred_categorical_data.append([np.argmax(pred)])
+    y_true_categorical_data.append([np.argmax(label)])
 
 y_pred_categorical_data = np.array(y_pred_categorical_data)
 print(y_pred_categorical_data.shape)

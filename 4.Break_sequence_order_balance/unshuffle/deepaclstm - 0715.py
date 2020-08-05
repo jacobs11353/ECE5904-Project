@@ -90,7 +90,7 @@ def build_model():
     
 
     model = Model(input=[main_input, auxiliary_input], output=[main_output])
-    adam = Adam(lr=0.003)
+    adam = Adam(lr=0.006)
     model.compile(optimizer = adam, loss={'main_output': 'categorical_crossentropy'}, metrics=['accuracy'])#'weighted_accuracy'])
     model.summary()
     return model
@@ -137,7 +137,7 @@ load_file = "model/ac_LSTM_best_time_26_07_15.h5" # M: val_loss E: val_weighted_
 checkpointer = ModelCheckpoint(filepath=load_file,verbose=1,save_best_only=True)
 
 history=model.fit({'main_input': traindatahot, 'aux_input': trainpssm}, {'main_output': trainlabel},validation_data=({'main_input': valdatahot, 'aux_input': valpssm},{'main_output': vallabel}),
-        nb_epoch=300, batch_size=44, callbacks=[checkpointer, earlyStopping], verbose=1, shuffle=True)
+        nb_epoch=500, batch_size=44, callbacks=[checkpointer, earlyStopping], verbose=1, shuffle=True)
 plotLoss(history)
 model.load_weights(load_file)
 print ("#########evaluate:##############")
